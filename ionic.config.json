@@ -1,0 +1,8 @@
+{
+  "name": "BPITApp",
+  "app_id": "a1c9fcd7",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
