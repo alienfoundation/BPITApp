@@ -23,7 +23,7 @@ export class StudentloginPage {
   }
 
   attendencePage() {
-    this.navCtrl.push(AttendencePage);
+    this.navCtrl.setRoot(AttendencePage);
   }
 
 }

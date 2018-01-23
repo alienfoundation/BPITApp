@@ -1,3 +1,20 @@
 page-attendence {
+    .att-card {
+        padding: 1rem;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+    }
 
+    .att-card h4 {
+        font-family: 'Roboto Slab', sans-serif !important;
+    }
+
+    .att-card h4 i {
+        font-size: var(--header-fontsize);
+    }
+
+    .att-card p {
+        margin: 0.5rem 0;
+        color: var(--color-darkgrey);
+    }
 }

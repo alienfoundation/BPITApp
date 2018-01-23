@@ -18,6 +18,7 @@
 :root {
     --main-bg: #9400D0;
     --color-white: #fbfbfb;
+    --color-dark: #222;
     --margin-standard: 1.2rem;
     --margin-more: 1.8rem;
     --fontsize-normal: 1.5rem;
@@ -27,7 +28,7 @@
     --btn-bg-white-fade: rgba(255, 255, 255, 0.3);
     --btn-shadow-light: 0 10px 7px -5px rgba(0, 0, 0, 0.07);
     --button-fontsize-normal: 2.2rem;
-    --text-shadow-placeholder: 0 0 3px rgba(0,0,0,0.3);
+    --color-darkgrey: #777;
 }
 
 ion-header {
@@ -40,6 +41,12 @@ ion-header ion-title .toolbar-title-md {
 
 ion-content {
     font-family: "Roboto", sans-serif !important;
+}
+
+ion-content * {
+    margin: 0;
+    padding: 0;
+    color: var(--color-dark);
 }
 
 .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
