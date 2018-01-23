@@ -1,4 +1,16 @@
 page-attendence {
+
+    ion-header {
+        background: url("../../assets/imgs/bpit1.jpg");
+        background-position: bottom;
+        background-size: cover;
+        height: 22rem;
+    }
+
+    ion-content .scroll-content {
+        padding-top: 18rem !important;
+    }
+
     .att-card {
         padding: 1rem;
         box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
@@ -45,6 +57,7 @@ page-attendence {
 
     .att-card:nth-child(odd) .pro-bar-container .pro-bar-deep {
         background: rgba(255,0,0,0.9);
+        width: 85%;
     }
 
     .att-card p.percent-container {
