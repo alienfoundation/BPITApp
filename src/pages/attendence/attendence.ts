@@ -1,29 +1,24 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { AttendencePage } from '../attendence/attendence';
 
 /**
- * Generated class for the StudentloginPage page.
+ * Generated class for the AttendencePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-studentlogin',
-  templateUrl: 'studentlogin.html',
+  selector: 'page-attendence',
+  templateUrl: 'attendence.html',
 })
-export class StudentloginPage {
+export class AttendencePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad StudentloginPage');
-  }
-
-  attendencePage() {
-    this.navCtrl.push(AttendencePage);
+    console.log('ionViewDidLoad AttendencePage');
   }
 
 }
