@@ -13,13 +13,14 @@ page-studentlogin {
     }
 
     ion-content .form {
-        padding-top: 50% !important;
+        padding-top: 45% !important;
     }
 
     ion-content .form .enroll-label,
     ion-content .form .pass-label {
         color: var(--color-white);
         margin-bottom: 0.4rem;
+        font-size: var(--fontsize-normal);
     }
 
     ion-content .form input {
@@ -39,10 +40,11 @@ page-studentlogin {
         display: block;
         background: none;
         border: none;
-        background: rgba(255, 255, 255, 0.2);
+        background: var(--btn-bg-white-fade);
         width: 100%;
-        padding: 1rem 0;
+        padding: var(--button-padding-normal) 0;
         color: var(--color-white);
         font-size: var(--button-fontsize-normal);
+        box-shadow: var(--btn-shadow-light); 
     }
 }
