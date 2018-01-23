@@ -32,11 +32,11 @@ page-attendence {
     }
 
     .att-card:nth-child(even) .pro-bar-container .pro-bar {
-        background: rgba(255,255,0,0.3);
+        background: rgba(0,255,0,0.2);
     }
 
     .att-card:nth-child(odd) .pro-bar-container .pro-bar {
-        background: rgba(255,0,0,0.3);
+        background: rgba(255,0,0,0.2);
     }
 
     .att-card .pro-bar-container .pro-bar-deep {
@@ -46,11 +46,11 @@ page-attendence {
     }
 
     .att-card:nth-child(even) .pro-bar-container .pro-bar-deep {
-        background: rgba(255,255,0,0.9);
+        background: rgba(0,255,0,0.95);
     }
 
     .att-card:nth-child(odd) .pro-bar-container .pro-bar-deep {
-        background: rgba(255,0,0,0.9);
+        background: rgba(255,0,0,0.95);
         width: 85%;
     }
 
