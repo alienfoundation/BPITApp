@@ -14,3 +14,18 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+:root {
+    --main-bg: #9400D0;
+    --color-white: #fbfbfb;
+    --margin-standard: 1.2rem;
+    --login-input-fontsize: 2.3rem;
+}
+
+ion-header {
+    font-family: "Cabin", sans-serif !important;
+}
+
+ion-content {
+    font-family: "Open Sans", sans-serif !important;
+}

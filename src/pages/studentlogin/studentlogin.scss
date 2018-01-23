@@ -1,5 +1,30 @@
 page-studentlogin {
+    ion-header .toolbar-background {
+        background: none;
+    }
+
+    ion-header button,
+    ion-header ion-title .toolbar-title-md {
+        color: var(--color-white) !important;
+    }
+
     ion-content {
-        background: rebeccapurple !important;
+        background: var(--main-bg) !important;
+    }
+
+    ion-content .form {
+        padding-top: 13rem !important;
+    }
+
+    ion-content .form input {
+        background: none;
+        border: none;
+        font-size: var(--login-input-fontsize);
+        margin-bottom: var(--margin-standard);
+        color: var(--color-white) !important;
+    }
+
+    ion-content .form input::placeholder {
+        color: var(--color-white) !important;
     }
 }
