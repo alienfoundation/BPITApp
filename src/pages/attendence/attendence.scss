@@ -1,20 +1,61 @@
 page-attendence {
     .att-card {
         padding: 1rem;
-        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
         border-radius: 2px;
+        margin-bottom: var(--margin-more);
     }
 
-    .att-card h4 {
+    .att-card h4.subject {
         font-family: 'Roboto Slab', sans-serif !important;
     }
 
     .att-card h4 i {
         font-size: var(--header-fontsize);
+        color: var(--main-bg);
     }
 
-    .att-card p {
+    .att-card p.time {
         margin: 0.5rem 0;
         color: var(--color-darkgrey);
+    }
+
+    .att-card .pro-bar-container .pro-bar {
+        height: 0.4rem;
+        border-radius: 0.1rem;
+    }
+
+    .att-card:nth-child(even) .pro-bar-container .pro-bar {
+        background: rgba(255,255,0,0.3);
+    }
+
+    .att-card:nth-child(odd) .pro-bar-container .pro-bar {
+        background: rgba(255,0,0,0.3);
+    }
+
+    .att-card .pro-bar-container .pro-bar-deep {
+        height: 0.4rem;
+        border-radius: 0.1rem;
+        width: 50%;
+    }
+
+    .att-card:nth-child(even) .pro-bar-container .pro-bar-deep {
+        background: rgba(255,255,0,0.9);
+    }
+
+    .att-card:nth-child(odd) .pro-bar-container .pro-bar-deep {
+        background: rgba(255,0,0,0.9);
+    }
+
+    .att-card p.percent-container {
+        margin-top: 1rem;
+    }
+
+    .att-card p.percent-container span {
+        display: inline-block;
+        background: #f2f2f2;
+        padding: 0.5rem 1rem;
+        color: var(--color-darkgrey);
+        border-radius: 1rem;
     }
 }
