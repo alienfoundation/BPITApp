@@ -4,6 +4,15 @@ page-attendence {
         background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
     }
 
+    .bar-button-menutoggle-md ion-icon {
+        font-size: 3.4rem !important;
+        color: var(--color-white) !important;
+    }
+
+    ion-header ion-title .toolbar-title-md {
+        color: var(--color-white);
+    }
+
     .att-card {
         padding: 1rem;
         box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
