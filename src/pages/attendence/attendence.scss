@@ -1,14 +1,7 @@
 page-attendence {
 
     ion-header {
-        background: url("../../assets/imgs/bpit1.jpg");
-        background-position: bottom;
-        background-size: cover;
-        height: 22rem;
-    }
-
-    ion-content .scroll-content {
-        padding-top: 18rem !important;
+        background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
     }
 
     .att-card {
@@ -30,6 +23,7 @@ page-attendence {
     .att-card p.time {
         margin: 0.5rem 0;
         color: var(--color-darkgrey);
+        text-align: right;
     }
 
     .att-card .pro-bar-container .pro-bar {
@@ -61,14 +55,15 @@ page-attendence {
     }
 
     .att-card p.percent-container {
-        margin-top: 1rem;
+        margin-top: 1.2rem;
     }
 
     .att-card p.percent-container span {
         display: inline-block;
         background: #f2f2f2;
-        padding: 0.5rem 1rem;
+        padding: 0.8rem 1.1rem 0.7rem;
         color: var(--color-darkgrey);
         border-radius: 1rem;
+        margin: 0 0.4rem;
     }
 }
