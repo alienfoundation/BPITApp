@@ -21,6 +21,7 @@
     --margin-standard: 1.2rem;
     --margin-more: 1.8rem;
     --fontsize-normal: 1.5rem;
+    --header-fontsize: 2.45rem;
     --login-input-fontsize: 2.8rem;
     --button-padding-normal: 1.5rem;
     --btn-bg-white-fade: rgba(255, 255, 255, 0.3);
@@ -34,7 +35,7 @@ ion-header {
 }
 
 ion-header ion-title .toolbar-title-md {
-    font-size: var(--login-input-fontsize) !important;
+    font-size: var(--header-fontsize) !important;
 }
 
 ion-content {
