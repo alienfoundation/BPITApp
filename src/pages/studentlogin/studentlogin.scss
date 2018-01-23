@@ -22,21 +22,11 @@ page-studentlogin {
         font-size: var(--login-input-fontsize);
         margin-bottom: var(--margin-more);
         color: var(--color-white) !important;
-        border-bottom: 1px solid var(--color-white);
-        text-shadow: var(--text-shadow-placeholder);
-    }
-
-    ion-content .form input.enroll-input {
-        width: 23rem;
-    }
-
-    ion-content .form input.pass-input {
-        width: 12rem;
+        width: 100%;
     }
 
     ion-content .form input::placeholder {
         color: var(--color-white) !important;
-        text-shadow: var(--text-shadow-placeholder);
     }
 
     ion-content .form button.login-next {
@@ -45,7 +35,6 @@ page-studentlogin {
         border: none;
         padding: 0;
         color: var(--color-white);
-        font-size: var(--login-input-fontsize);
-        text-shadow: var(--text-shadow-placeholder);
+        font-size: var(--button-fontsize-normal);
     }
 }
