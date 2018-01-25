@@ -13,16 +13,26 @@ page-attendence {
         color: var(--color-white);
     }
 
-    ion-content .day-selector select {
-        width: 100%;
-        margin-bottom: var(--margin-more);
-        background: rgba(152, 104, 208, 0.7);
-        border-radius: 0.25rem;
-        border: none;
-        padding: var(--button-padding-normal) 1rem;
-        color: var(--color-white);
-        font-size: var(--button-fontsize-normal);
-        box-shadow: var(--btn-shadow-light);
+    // ion-content .day-selector select {
+    //     width: 100%;
+    //     margin-bottom: var(--margin-more);
+    //     background: rgba(152, 104, 208, 0.7);
+    //     border-radius: 0.25rem;
+    //     border: none;
+    //     padding: var(--button-padding-normal) 1rem;
+    //     color: var(--color-white);
+    //     font-size: var(--button-fontsize-normal);
+    //     box-shadow: var(--btn-shadow-light);
+    // }
+
+    ion-content .day-selector span {
+        display: inline-block;
+        background: #f2f2f2;
+        padding: 0.8rem 1.1rem 0.7rem;
+        color: var(--color-darkgrey);
+        border-radius: 1rem;
+        margin: 0 0.4rem;
+        margin-bottom: 2rem;
     }
 
     .att-card {
@@ -48,7 +58,7 @@ page-attendence {
     }
 
     .att-card .pro-bar-container .pro-bar {
-        height: 5px;
+        height: 3px;
         border-radius: 0.1rem;
     }
 
@@ -61,7 +71,7 @@ page-attendence {
     }
 
     .att-card .pro-bar-container .pro-bar-deep {
-        height: 5px;
+        height: 3px;
         border-radius: 0.1rem;
         width: 50%;
     }

@@ -22,4 +22,10 @@ export class AttendencePage {
     console.log('ionViewDidLoad AttendencePage');
   }
 
+
+
+  changeDay() {
+    console.log("day change");
+  }
+
 }
