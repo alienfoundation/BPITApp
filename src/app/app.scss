@@ -55,3 +55,12 @@ ion-content * {
 .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
     background: none;
 }
+
+.smenu-items i {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.smenu-items .item-inner {
+    border: none !important;
+}
