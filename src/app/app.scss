@@ -42,8 +42,44 @@ ion-header ion-title .toolbar-title-md {
     font-size: var(--header-fontsize) !important;
 }
 
+ion-header ion-title.sidemenu-title {
+    background: url('../../assets/imgs/bpit1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: -4px;
+}
+
+ion-header ion-title.sidemenu-title .toolbar-title-md {
+    padding: 0;
+}
+
+ion-header ion-title.sidemenu-title .sm-title-shadow {
+    padding-top: 14rem;
+    background: rgba($color: #000000, $alpha: 0.5);
+    margin: 0;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+ion-header ion-title.sidemenu-title .sm-title-shadow h3 {
+    margin: 0;
+    color: var(--color-white);
+    font-size: 2.5rem;
+}
+
+ion-header ion-title.sidemenu-title .sm-title-shadow p {
+    font-size: 1.45rem;
+    color: var(--color-white);
+    margin: 0;
+    padding-top: 0.7rem;
+}
+
 ion-content {
     font-family: "Roboto", sans-serif !important;
+}
+
+.menu-content .fixed-content {
+    margin-top: 0rem !important;
 }
 
 ion-content * {
@@ -54,6 +90,14 @@ ion-content * {
 
 .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
     background: none;
+}
+
+.sm-wrapper {
+    margin-top: 2rem !important;
+}
+
+.smenu-items {
+    margin-top: 1rem;
 }
 
 .smenu-items i {
