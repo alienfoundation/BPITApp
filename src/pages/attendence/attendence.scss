@@ -13,20 +13,7 @@ page-attendence {
         color: var(--color-white);
     }
 
-    // ion-content .day-selector select {
-    //     width: 100%;
-    //     margin-bottom: var(--margin-more);
-    //     background: rgba(152, 104, 208, 0.7);
-    //     border-radius: 0.25rem;
-    //     border: none;
-    //     padding: var(--button-padding-normal) 1rem;
-    //     color: var(--color-white);
-    //     font-size: var(--button-fontsize-normal);
-    //     box-shadow: var(--btn-shadow-light);
-    // }
-
     ion-content .day-selector {
-        // background: url('../../assets/imgs/bpit1.jpg');
         background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
         background-size: cover;
         background-position: center;
@@ -37,11 +24,28 @@ page-attendence {
 
     ion-content .day-selector .shadow {
         background: rgba($color: #000000, $alpha: 0.2);
-        padding-top: 14rem;
+        padding-top: 6rem;
+        padding-bottom: 1.2rem;
         margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    ion-content .day-selector .shadow .notify {
+        cursor: pointer;
+        color: var(--color-white);
+        font-weight: 600;
+        padding-bottom: 5rem;
+    }
+
+    ion-content .day-selector .shadow .notify i {
+        color: var(--color-white);
+        font-size: 3rem;
+    }
+
+    ion-content .day-selector .shadow .days {
         overflow-x: scroll;
         white-space: nowrap;
-        text-align: center;
+        padding: 0 2rem;
     }
 
     ion-content .day-selector span {
@@ -50,7 +54,7 @@ page-attendence {
         padding: 0.8rem 1.1rem 0.7rem;
         color: var(--color-darkgrey);
         // border-radius: 1rem;
-        margin: 0 1rem;
+        margin: 0 0.5rem;
         border-radius: 0.125rem;
         margin-bottom: 0.5rem;
         cursor: pointer;
@@ -107,10 +111,12 @@ page-attendence {
 
     .att-card:nth-child(even) .pro-bar-container .pro-bar-deep {
         background: rgba(0,0,255,0.95);
+        box-shadow: 0 0 10px rgba(0,0,255,0.95);
     }
 
     .att-card:nth-child(odd) .pro-bar-container .pro-bar-deep {
         background: rgba(255,0,0,0.95);
+        box-shadow: 0 0 10px rgba(255,0,0,0.95);
         width: 85%;
     }
 
