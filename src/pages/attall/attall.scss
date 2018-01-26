@@ -75,7 +75,8 @@ page-attall {
     }
 
     .att-card.total {
-        background: #b2eefd;
+        background: #c7f4ff;
+        box-shadow: none;
     }
 
     .att-card h4.subject {
@@ -138,5 +139,9 @@ page-attall {
         border-radius: 1rem;
         margin: 0 0.4rem;
         margin-top: 1.2rem;
+    }
+
+    .att-card.total p.percent-container span {
+        background: #fff;
     }
 }
