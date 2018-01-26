@@ -14,9 +14,22 @@ page-home {
     }
 
     .logo-container {
-        padding: 2rem 0;
-        background: var(--color-white);
+        // background: var(--color-white);
+        background: url("../../assets/imgs/bpit1.jpg");
+        background-size: cover;
+        background-position: center;
         margin: -16px;
+    }
+
+    .logo-container .logo-shadow {
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+        background: rgba(0, 0, 0, 0.6);
+        text-align: center;
+    }
+
+    .logo-container .logo-shadow img {
+        height: 8rem;
     }
 
     .intro-block h3 {
