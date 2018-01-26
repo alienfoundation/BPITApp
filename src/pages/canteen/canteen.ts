@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { PhotoViewer } from '@ionic-native/photo-viewer';
 
 /**
  * Generated class for the CanteenPage page.
@@ -14,11 +15,15 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class CanteenPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private photoViewer: PhotoViewer) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CanteenPage');
   }
 
+  viewMenu() {
+    console.log('photoviwe m hu');
+    this.photoViewer.show('./assets/imgs/bpit1.jpg');
+  }
 }
