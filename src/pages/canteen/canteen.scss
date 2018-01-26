@@ -47,10 +47,49 @@ page-canteen {
         width: 100%;
         padding: 2rem;
         margin: 2rem 0;
+        padding-top: 2.2rem;
         font-size: var(--header-fontsize);
         color: var(--color-white);
         box-shadow: var(--btn-shadow-light);
         background: rgba(255, 0, 0, 0.6);
         font-weight: 300;
+    }
+
+    hr.divider {
+        border: none;
+        background: none;
+        border-top: 1px dashed rgba(255, 0, 0, 0.5);
+    }
+
+    .canteen-today {
+        margin-top: 2rem;
+    }
+
+    .canteen-today p {
+        padding: 1.5rem 1rem;
+        margin: 1rem 0;
+        padding-top: 1.7rem;
+        font-weight: 300;
+    }
+
+    .canteen-today p:nth-child(odd) {
+        background: rgba(0, 255, 0, 0.2);
+    }
+
+    .canteen-today p:nth-child(even) {
+        background: rgba(0, 0, 255, 0.15);
+    }
+
+    .canteen-today p span {
+        float: right;
+        color: var(--color-darkgrey);
+    }
+
+    .canteen-today p span i {
+        color: var(--color-darkgrey);
+    }
+
+    .canteen-today h3 {
+        font-weight: 400;
     }
 }
