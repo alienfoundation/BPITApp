@@ -1,5 +1,18 @@
 page-canteen {
 
+    ion-header {
+        background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    }
+
+    .bar-button-menutoggle-md ion-icon {
+        font-size: 3.4rem !important;
+        color: var(--color-white) !important;
+    }
+
+    ion-header ion-title .toolbar-title-md {
+        color: var(--color-white);
+    }
+
     ion-content .day-selector {
         background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
         background-size: cover;
@@ -28,5 +41,16 @@ page-canteen {
     ion-content .day-selector .shadow .notify i {
         color: var(--color-white);
         font-size: 3rem;
+    }
+
+    .menu-btn {
+        width: 100%;
+        padding: 2rem;
+        margin: 2rem 0;
+        font-size: var(--header-fontsize);
+        color: var(--color-white);
+        box-shadow: var(--btn-shadow-light);
+        background: rgba(255, 0, 0, 0.6);
+        font-weight: 300;
     }
 }
