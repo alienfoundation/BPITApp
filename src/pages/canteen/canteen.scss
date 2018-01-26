@@ -66,18 +66,19 @@ page-canteen {
     }
 
     .canteen-today p {
-        padding: 1.5rem 1rem;
+        padding: 2rem 2rem;
         margin: 1rem 0;
         padding-top: 1.7rem;
-        font-weight: 300;
+        font-size: 1.8rem;
+        border-radius: 0.2rem;
     }
 
     .canteen-today p:nth-child(odd) {
-        background: rgba(0, 255, 0, 0.2);
+        background: rgba(0, 0, 0, 0.04);
     }
 
     .canteen-today p:nth-child(even) {
-        background: rgba(0, 0, 255, 0.15);
+        background: rgba(0, 0, 0, 0.06);
     }
 
     .canteen-today p span {
