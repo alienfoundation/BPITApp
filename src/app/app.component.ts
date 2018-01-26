@@ -4,7 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { AttallPage } from '../pages/attall/attall';
 
 @Component({
   templateUrl: 'app.html'
@@ -22,14 +22,10 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Attendance', component: HomePage },
-      { title: 'Canteen', component: HomePage },
-      { title: 'Examination Schedule', component: HomePage },
-      { title: 'CGPA Calculator', component: HomePage },
-      { title: 'Settings', component: HomePage }
+      { title: 'Atall', component: AttallPage }
     ];
 
-    
+
 
   }
 
@@ -45,6 +41,8 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
+    console.log(page);
     this.nav.setRoot(page.component);
   }
+
 }

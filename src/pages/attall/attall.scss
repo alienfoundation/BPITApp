@@ -1,4 +1,4 @@
-page-attendence {
+page-attall {
 
     ion-header {
         background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
@@ -72,6 +72,10 @@ page-attendence {
         box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
         border-radius: 2px;
         margin-bottom: var(--margin-more);
+    }
+
+    .att-card.total {
+        background: #b2eefd;
     }
 
     .att-card h4.subject {

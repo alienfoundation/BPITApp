@@ -8,6 +8,8 @@ import { ListPage } from '../pages/list/list';
 import { StudentloginPage } from '../pages/studentlogin/studentlogin';
 import { AttendencePage } from '../pages/attendence/attendence';
 import { CanteenPage } from '../pages/canteen/canteen';
+import { AttallPage } from '../pages/attall/attall';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     StudentloginPage,
     AttendencePage,
-    CanteenPage
+    CanteenPage,
+    AttallPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     StudentloginPage,
     AttendencePage,
-    CanteenPage
+    CanteenPage,
+    AttallPage
   ],
   providers: [
     StatusBar,
