@@ -13,6 +13,7 @@ import { AttallPage } from '../pages/attall/attall';
 import { TeachloginPage } from '../pages/teachlogin/teachlogin';
 import { TeachattPage } from '../pages/teachatt/teachatt';
 import { TeachseeallPage } from '../pages/teachseeall/teachseeall';
+import { AttpagePage } from '../pages/attpage/attpage';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -29,7 +30,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AttallPage,
     TeachloginPage,
     TeachattPage,
-    TeachseeallPage
+    TeachseeallPage,
+    AttpagePage
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AttallPage,
     TeachloginPage,
     TeachattPage,
-    TeachseeallPage
+    TeachseeallPage,
+    AttpagePage
   ],
   providers: [
     StatusBar,

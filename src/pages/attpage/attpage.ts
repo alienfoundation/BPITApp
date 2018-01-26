@@ -1,29 +1,24 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { AttpagePage } from '../attpage/attpage';
 
 /**
- * Generated class for the TeachattPage page.
+ * Generated class for the AttpagePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-teachatt',
-  templateUrl: 'teachatt.html',
+  selector: 'page-attpage',
+  templateUrl: 'attpage.html',
 })
-export class TeachattPage {
+export class AttpagePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TeachattPage');
-  }
-
-  attPage() {
-    this.navCtrl.push(AttpagePage);
+    console.log('ionViewDidLoad AttpagePage');
   }
 
 }

@@ -18,9 +18,10 @@
         <option>Friday</option>
       </select> -->
       <div class="shadow">
-        <div class="notify">
+        <div class="notify" (click)="attPage()">
           <h3>Take Attendance</h3>
           <h3>CSE A (II)</h3>
+          <h3>Time: 13.00 - 14.00</h3>
         </div>
         <div class="days">
           <span class="active-day">Monday</span>
@@ -41,11 +42,6 @@
           <div class="pro-bar-deep-head"></div>
         </div>
       </div>
-      <p class="percent-container">
-          <span class="present">Present: 5</span>
-          <span class="absent">Absent: 0</span>
-          <span class="percent">Precentage: 100%</span>
-      </p>
     </div>
   
     <div class="att-card">
@@ -57,11 +53,6 @@
             <div class="pro-bar-deep-head"></div>
           </div>
         </div>
-        <p class="percent-container">
-          <span class="present">Present: 5</span>
-          <span class="absent">Absent: 0</span>
-          <span class="percent">Precentage: 100%</span>
-        </p>
       </div>
   
       <div class="att-card">
@@ -73,11 +64,6 @@
               <div class="pro-bar-deep-head"></div>
             </div>
           </div>
-          <p class="percent-container">
-            <span class="present">Present: 31</span>
-            <span class="absent">Absent: 11</span>
-            <span class="percent">Precentage: 78%</span>
-          </p>
         </div>
   </ion-content>
     
