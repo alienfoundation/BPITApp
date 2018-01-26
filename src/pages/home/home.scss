@@ -1,3 +1,74 @@
 page-home {
 
+    ion-content {
+        background: var(--main-gradient);
+    }
+
+    .intro-block {
+        padding-top: 8rem;
+        text-align: center;
+    }
+
+    .intro-block * {
+        color: var(--color-white);
+    }
+
+    .logo-container {
+        padding: 2rem 0;
+        background: var(--color-white);
+        margin: -16px;
+    }
+
+    .intro-block h3 {
+        font-weight: 500;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .intro-block h4 {
+        font-weight: 300;
+    }
+
+    .intro-block h3 {
+        font-size: var(--button-fontsize-normal);
+        margin-bottom: 3rem;
+    }
+
+    .stu-login,
+    .teach-login {
+        display: block;
+        background: none;
+        border: none;
+        background: var(--btn-bg-white-fade);
+        width: 100%;
+        padding: var(--button-padding-normal) 0;
+        color: var(--color-white);
+        font-size: var(--button-fontsize-normal);
+        box-shadow: var(--btn-shadow-light); 
+        margin-top: 2rem;
+    }
+
+
+    .teach-login {
+        margin-top: 5rem;
+    }
+
+    .home-footer {
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    .home-footer p,
+    .home-footer p * {
+        color: var(--color-white);
+    }
+
+    .home-footer p i {
+        color: red;
+    }
+
+    .home-footer p span {
+        font-weight: 600;
+    }
+
 }

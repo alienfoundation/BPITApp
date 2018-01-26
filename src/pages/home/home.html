@@ -1,19 +1,21 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-  <button (click)='studentLogin()'>Student Login</button>
+    <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <div class="logo-container">
+      <img [src]="bpitlogo">
+    </div>
+
+    <div class="intro-block">
+        <h3>BPIT App</h3>
+       <h4>The one stop solution for everything you need in BPIT.</h4>
+    </div>
+
+    <button class="teach-login">Teacher Zone</button>
+    <button (click)='studentLogin()' class="stu-login">Student Zone</button>
+
+    <div class="home-footer">
+      <p>Made with <i class="fa fa-heart"></i> by <span>BPIT Developers Hub</span></p>
+    </div>
+
 </ion-content>

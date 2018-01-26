@@ -8,6 +8,8 @@ import { StudentloginPage } from '../studentlogin/studentlogin';
 })
 export class HomePage {
 
+  bpitlogo:string = "./assets/imgs/logo.png";
+
   constructor(public navCtrl: NavController) {
     
   }
