@@ -10,6 +10,9 @@ import { StudentloginPage } from '../pages/studentlogin/studentlogin';
 import { AttendencePage } from '../pages/attendence/attendence';
 import { CanteenPage } from '../pages/canteen/canteen';
 import { AttallPage } from '../pages/attall/attall';
+import { TeachloginPage } from '../pages/teachlogin/teachlogin';
+import { TeachattPage } from '../pages/teachatt/teachatt';
+import { TeachseeallPage } from '../pages/teachseeall/teachseeall';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -23,7 +26,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StudentloginPage,
     AttendencePage,
     CanteenPage,
-    AttallPage
+    AttallPage,
+    TeachloginPage,
+    TeachattPage,
+    TeachseeallPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +43,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StudentloginPage,
     AttendencePage,
     CanteenPage,
-    AttallPage
+    AttallPage,
+    TeachloginPage,
+    TeachattPage,
+    TeachseeallPage
   ],
   providers: [
     StatusBar,

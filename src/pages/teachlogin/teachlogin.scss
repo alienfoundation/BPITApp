@@ -1,0 +1,55 @@
+page-teachlogin {
+
+    ion-header button,
+    ion-header ion-title .toolbar-title-md {
+        color: var(--color-white) !important;
+    }
+
+    ion-content {
+        // background: var(--main-bg) !important;
+        background: var(--main-gradient);
+    }
+
+    ion-content .s-zone h1 {
+        font-size: var(--login-input-fontsize);
+        color: var(--color-white);
+    }
+
+    ion-content .form {
+        padding-top: 37% !important;
+    }
+
+    ion-content .form .enroll-label,
+    ion-content .form .pass-label {
+        color: var(--color-white);
+        margin-bottom: 0.4rem;
+        font-size: var(--fontsize-normal);
+    }
+
+    ion-content .form input {
+        background: none;
+        border: none;
+        font-size: var(--login-input-fontsize);
+        margin-bottom: var(--margin-more);
+        color: var(--color-white) !important;
+        width: 100%;
+        font-weight: 300;
+    }
+
+    ion-content .form input::placeholder {
+        color: var(--color-white) !important;
+    }
+
+    ion-content .form button.login-next {
+        display: block;
+        background: none;
+        border: none;
+        background: var(--btn-bg-white-fade);
+        width: 100%;
+        padding: var(--button-padding-normal) 0;
+        color: var(--color-white);
+        font-size: var(--button-fontsize-normal);
+        box-shadow: var(--btn-shadow-light); 
+        margin-top: 1.5rem;
+    }
+}

@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>BPIT App</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+    <div class="day-selector">
+      <!-- <select (change)="changeDay()">
+        <option selected>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+      </select> -->
+      <div class="shadow">
+        <div class="notify">
+          <h3>Take Attendance</h3>
+          <h3>CSE A (II)</h3>
+        </div>
+        <div class="days">
+          <span class="active-day">Monday</span>
+          <span>Tuesday</span>
+          <span>Wednesday</span>
+          <span>Thursday</span>
+          <span>Friday</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="att-card">
+      <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> CSE-A (II), Room No - 403</h4>
+      <p class="time">Time :10:15</p>
+      <div class="pro-bar-container">
+        <div class="pro-bar">
+          <div class="pro-bar-deep"></div>
+          <div class="pro-bar-deep-head"></div>
+        </div>
+      </div>
+      <p class="percent-container">
+          <span class="present">Present: 5</span>
+          <span class="absent">Absent: 0</span>
+          <span class="percent">Precentage: 100%</span>
+      </p>
+    </div>
+  
+    <div class="att-card">
+        <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> IT (II), Room No - 305</h4>
+        <p class="time">Time: 10:15</p>
+        <div class="pro-bar-container">
+          <div class="pro-bar">
+            <div class="pro-bar-deep"></div>
+            <div class="pro-bar-deep-head"></div>
+          </div>
+        </div>
+        <p class="percent-container">
+          <span class="present">Present: 5</span>
+          <span class="absent">Absent: 0</span>
+          <span class="percent">Precentage: 100%</span>
+        </p>
+      </div>
+  
+      <div class="att-card">
+          <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> CSE-B (II), Lab, Room No - 108 A</h4>
+          <p class="time">Time: 13:00</p>
+          <div class="pro-bar-container">
+            <div class="pro-bar">
+              <div class="pro-bar-deep"></div>
+              <div class="pro-bar-deep-head"></div>
+            </div>
+          </div>
+          <p class="percent-container">
+            <span class="present">Present: 31</span>
+            <span class="absent">Absent: 11</span>
+            <span class="percent">Precentage: 78%</span>
+          </p>
+        </div>
+  </ion-content>
+    
