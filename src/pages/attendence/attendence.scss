@@ -111,12 +111,12 @@ page-attendence {
 
     .att-card:nth-child(even) .pro-bar-container .pro-bar-deep {
         background: rgba(0,0,255,0.95);
-        box-shadow: 0 0 10px rgba(0,0,255,0.95);
+        box-shadow: 0 0 9px rgba(0,0,255,0.7);
     }
 
     .att-card:nth-child(odd) .pro-bar-container .pro-bar-deep {
         background: rgba(255,0,0,0.95);
-        box-shadow: 0 0 10px rgba(255,0,0,0.95);
+        box-shadow: 0 0 9px rgba(255,0,0,0.7);
         width: 85%;
     }
 
