@@ -81,8 +81,8 @@ page-teachatt {
     }
 
     .att-card {
-        padding: 2rem 1rem;
-        padding-bottom: 0rem;
+        padding: 4rem 1rem;
+        padding-bottom: 2rem;
         box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
         border-radius: 2px;
         margin-bottom: var(--margin-more);
@@ -99,17 +99,15 @@ page-teachatt {
     }
 
     .att-card p.time {
-        margin: 0.5rem 0;
+        margin: 1.5rem 0;
         color: var(--color-darkgrey);
-        text-align: right;
+        // text-align: right;
         margin-bottom: 1rem;
     }
 
     .att-card .pro-bar-container .pro-bar {
         height: 3px;
         border-radius: 0.1rem;
-        margin-bottom: 1rem;
-        margin-top: 3rem;
         margin-right: -1rem;
         margin-left: -1rem;
     }
@@ -119,7 +117,7 @@ page-teachatt {
         border-radius: 0.1rem;
         width: 100%;
         // background: rgba(0,0,255,0.95);
-        box-shadow: 0 0 9px rgba(0,0,255,0.7);
+        // box-shadow: 0 0 9px rgba(0,0,255,0.7);
     }
 
     .att-card p.percent-container {
