@@ -69,14 +69,15 @@ page-attendence {
     }
 
     .att-card {
-        padding: 1rem;
+        padding: 2rem;
         box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
         border-radius: 2px;
         margin-bottom: var(--margin-more);
     }
 
     .att-card h4.subject {
-        font-family: 'Roboto Slab', sans-serif !important;
+        font-weight: 300;
+        margin-bottom: 1rem;
     }
 
     .att-card h4 i {
@@ -88,11 +89,13 @@ page-attendence {
         margin: 0.5rem 0;
         color: var(--color-darkgrey);
         text-align: right;
+        margin-bottom: 1rem;
     }
 
     .att-card .pro-bar-container .pro-bar {
         height: 3px;
         border-radius: 0.1rem;
+        margin-bottom: 1rem;
     }
 
     .att-card:nth-child(even) .pro-bar-container .pro-bar {

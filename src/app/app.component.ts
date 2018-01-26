@@ -29,6 +29,8 @@ export class MyApp {
       { title: 'Settings', component: HomePage }
     ];
 
+    
+
   }
 
   initializeApp() {
