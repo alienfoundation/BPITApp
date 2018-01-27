@@ -1,4 +1,4 @@
-page-attpage {
+page-editatt {
 
     ion-header {
         background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
@@ -89,6 +89,11 @@ page-attpage {
         border: 1px dashed #ff4848;
         color: #ff4848;
         margin-top: 3rem;
+    }
+
+    .tick-container i.green.active {
+        background: #0bb90b;
+        color: var(--color-white);
     }
 
     .tick-container i.green:active {

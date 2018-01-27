@@ -20,7 +20,8 @@ page-confirmatt {
         text-align: center;
     }
 
-    .att-wrapper select {
+    .att-wrapper select,
+    .att-wrapper input {
         color: var(--color-dark);
         font-weight: 300;
         font-size: 3rem;

@@ -1,33 +1,29 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { AttpagePage } from '../attpage/attpage';
+import { EditattPage } from '../editatt/editatt';
 
 /**
- * Generated class for the ConfirmattPage page.
+ * Generated class for the TdateattPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-confirmatt',
-  templateUrl: 'confirmatt.html',
+  selector: 'page-tdateatt',
+  templateUrl: 'tdateatt.html',
 })
-export class ConfirmattPage {
+export class TdateattPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ConfirmattPage');
+    console.log('ionViewDidLoad TdateattPage');
   }
 
-  attPage() {
-    this.navCtrl.push(AttpagePage);
-  }
-
-  show(value) {
-    console.log(value);
+  editattPage() {
+    this.navCtrl.push(EditattPage);
   }
 
 }

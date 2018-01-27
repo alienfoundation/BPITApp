@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { TdateattPage } from '../tdateatt/tdateatt';
 
 /**
  * Generated class for the AllclassPage page.
@@ -19,6 +20,10 @@ export class AllclassPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AllclassPage');
+  }
+
+  tdateattPage() {
+    this.navCtrl.push(TdateattPage)
   }
 
 }

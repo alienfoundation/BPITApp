@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>BPIT App</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="att-wrapper">
+    <select>
+      <option>Total</option>
+      <option>Date</option>
+    </select>
+    <input type="date" value="2018-01-27">
+  </div>
+
+  <div class="att-card" (click)="editattPage()">
+      <h4 class="subject"><i class="fa fa-child" aria-hidden="true"></i> Nikhil Thakur <span><i class="fa fa-pencil"></i></span></h4>
+      <div class="pro-bar-container">
+        <div class="pro-bar">
+          <div class="pro-bar-deep"></div>
+          <div class="pro-bar-deep-head"></div>
+        </div>
+      </div>
+      <p class="percent-container">
+          <span class="present">Present: 5</span>
+          <span class="absent">Absent: 0</span>
+          <span class="percent">Precentage: 100%</span>
+      </p>
+    </div>
+  
+    <div class="att-card" (click)="editattPage()">
+        <h4 class="subject"><i class="fa fa-child" aria-hidden="true"></i> Jalaj Khurana <span><i class="fa fa-pencil"></i></span></h4>
+        <div class="pro-bar-container">
+          <div class="pro-bar">
+            <div class="pro-bar-deep"></div>
+            <div class="pro-bar-deep-head"></div>
+          </div>
+        </div>
+        <p class="percent-container">
+          <span class="present">Present: 5</span>
+          <span class="absent">Absent: 0</span>
+          <span class="percent">Precentage: 100%</span>
+        </p>
+      </div>
+  
+      <div class="att-card" (click)="editattPage()">
+          <h4 class="subject"><i class="fa fa-child" aria-hidden="true"></i> Abhishek Saini <span><i class="fa fa-pencil"></i></span></h4>
+          <div class="pro-bar-container">
+            <div class="pro-bar">
+              <div class="pro-bar-deep"></div>
+              <div class="pro-bar-deep-head"></div>
+            </div>
+          </div>
+          <p class="percent-container">
+            <span class="present">Present: 31</span>
+            <span class="absent">Absent: 11</span>
+            <span class="percent">Precentage: 78%</span>
+          </p>
+        </div>
+</ion-content>
