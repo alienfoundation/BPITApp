@@ -72,7 +72,16 @@ page-attpage {
         border: 1px solid #fff;
         border-radius: 50%;
         box-shadow: var(--att-shadow);
+        transition: all 0.2s ease-in-out;
     }
+
+    .tick-container i.green {
+        padding: 7rem;
+        border: 1px dashed #0bb90b;
+        color: #0bb90b;
+        margin-top: 3rem;
+    }
+
 
     .tick-container i.red {
         padding: 4rem 4.5rem;
@@ -81,13 +90,14 @@ page-attpage {
         margin-top: 3rem;
     }
 
-    .tick-container i.green {
-        padding: 7rem;
-        border: 1px dashed #0bb90b;
-        color: #0bb90b;
-        margin-top: 3rem;
-        margin-left: 3rem;
+    .tick-container i.green:active {
+        background: #0bb90b;
+        color: var(--color-white);
     }
 
+    .tick-container i.red:active {
+        background: #ff4848;
+        color: var(--color-white);
+    }
 
 }
