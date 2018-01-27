@@ -1,0 +1,59 @@
+page-confirmatt {
+
+    ion-header {
+        background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    }
+
+    .bar-button-default-md ion-icon {
+        font-size: 3.4rem !important;
+        color: var(--color-white) !important;
+    }
+
+    ion-header ion-title .toolbar-title-md {
+        color: var(--color-white);
+    }
+
+    .att-wrapper {
+        background: #f2f2f2;
+        margin: -16px;
+        padding: 8rem 1rem 7rem;
+        text-align: center;
+    }
+
+    .att-wrapper select {
+        color: var(--color-dark);
+        font-weight: 300;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        display: block;
+        background: none;
+        border: none;
+    }
+
+    .att-wrapper select option {
+        font-size: 2rem;
+    }
+
+    .tick-container {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .tick-container i {
+        display: inline-block;
+        font-size: 4rem;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        box-shadow: var(--att-shadow);
+    }
+
+    .tick-container i.green {
+        padding: 7rem;
+        border: 1px dashed #0bb90b;
+        color: #0bb90b;
+        margin-top: 3rem;
+    }
+
+
+}

@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>BPIT App</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+
+    <div class="att-wrapper">
+      <select>
+        <option>CSE-A</option>
+        <option>IT</option>
+        <option>CSE-B</option>
+        <option>EEE</option>
+      </select>
+      <select>
+        <option>First Year</option>
+        <option>Second Year</option>
+        <option>Third Year</option>
+        <option>Fourth Year</option>
+      </select>
+      <select>
+          <option>Period 1</option>
+          <option>Period 2</option>
+          <option>Period 3</option>
+          <option>Period 4</option>
+        </select>
+    </div>
+
+    <div class="tick-container">
+      <i class="fa fa-check green" (click)="attPage()"></i>
+    </div>
+
+</ion-content>
