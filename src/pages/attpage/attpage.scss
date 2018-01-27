@@ -16,7 +16,7 @@ page-attpage {
     .att-wrapper {
         background: #f2f2f2;
         margin: -16px;
-        padding: 5rem 1rem 4rem;
+        padding: 8rem 1rem 7rem;
         text-align: center;
     }
 
@@ -25,13 +25,14 @@ page-attpage {
         color: var(--color-dark);
         font-weight: 300;
         font-size: 3rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .pro-bar-container .pro-bar {
         height: 3px;
         border-radius: 0.1rem;
-        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 
     .pro-bar-container .pro-bar {
@@ -62,27 +63,30 @@ page-attpage {
 
     .tick-container {
         text-align: center;
+        margin-top: 4rem;
     }
 
     .tick-container i {
         display: inline-block;
         font-size: 4rem;
-        color: var(--color-white);
         border: 1px solid #fff;
         border-radius: 50%;
+        box-shadow: var(--att-shadow);
     }
 
     .tick-container i.red {
         padding: 4rem 4.5rem;
-        background: #ff4848;
+        border: 1px dashed #ff4848;
+        color: #ff4848;
         margin-top: 3rem;
     }
 
     .tick-container i.green {
         padding: 7rem;
-        background: #0ea70e;
+        border: 1px dashed #0bb90b;
+        color: #0bb90b;
         margin-top: 3rem;
-        margin-left: -3rem;
+        margin-left: 3rem;
     }
 
 
