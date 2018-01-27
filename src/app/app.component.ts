@@ -8,6 +8,7 @@ import { AttallPage } from '../pages/attall/attall';
 import { CanteenPage } from '../pages/canteen/canteen';
 import { AttendencePage } from '../pages/attendence/attendence';
 import { AllclassPage } from '../pages/allclass/allclass';
+import { TeachattPage } from '../pages/teachatt/teachatt';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,8 @@ export class MyApp {
       { title: 'Attendance', component: AttendencePage },
       { title: 'Atall', component: AttallPage },
       { title: 'Canteen', component: CanteenPage } ,
-      { title: 'AllClass', component: AllclassPage  }
+      { title: 'AllClass', component: AllclassPage } ,
+      { title: 'Teachatt', component: TeachattPage }
     ];
 
 
