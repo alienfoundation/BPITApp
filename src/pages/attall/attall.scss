@@ -75,9 +75,6 @@ page-attall {
     }
 
     .att-card.total {
-        // background: #c7f4ff;
-        // box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
-        // box-shadow: none;
         border: 1px dashed rgba(0, 0, 255, 0.2);
     }
 
@@ -101,7 +98,7 @@ page-attall {
     .att-card .pro-bar-container .pro-bar {
         height: 3px;
         border-radius: 0.1rem;
-        margin-bottom: 1rem;
+        margin-top: 1.5rem;
     }
 
     .att-card:nth-child(even) .pro-bar-container .pro-bar {
