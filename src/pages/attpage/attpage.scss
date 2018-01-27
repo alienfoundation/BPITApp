@@ -1,3 +1,89 @@
 page-attpage {
 
+    ion-header {
+        background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    }
+
+    .bar-button-default-md ion-icon {
+        font-size: 3.4rem !important;
+        color: var(--color-white) !important;
+    }
+
+    ion-header ion-title .toolbar-title-md {
+        color: var(--color-white);
+    }
+
+    .att-wrapper {
+        background: #f2f2f2;
+        margin: -16px;
+        padding: 5rem 1rem 4rem;
+        text-align: center;
+    }
+
+    .att-wrapper h3,
+    .att-wrapper h4 {
+        color: var(--color-dark);
+        font-weight: 300;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .pro-bar-container .pro-bar {
+        height: 3px;
+        border-radius: 0.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .pro-bar-container .pro-bar {
+        background: rgba(0,0,255,0.2);
+    }
+
+    .pro-bar-container .pro-bar-deep {
+        height: 3px;
+        border-radius: 0.1rem;
+        width: 50%;
+        background: rgba(0,0,255,0.95);
+        box-shadow: 0 0 9px rgba(0,0,255,0.7);
+    }
+
+    p.percent-container {
+        text-align: center;
+    }
+
+    p.percent-container span {
+        display: inline-block;
+        background: var(--color-white);
+        padding: 0.8rem 1.1rem 0.7rem;
+        color: var(--color-darkgrey);
+        border-radius: 1rem;
+        margin: 0 0.4rem;
+        margin-top: 1.2rem;
+    }
+
+    .tick-container {
+        text-align: center;
+    }
+
+    .tick-container i {
+        display: inline-block;
+        font-size: 4rem;
+        color: var(--color-white);
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+
+    .tick-container i.red {
+        padding: 4rem 4.5rem;
+        background: #ff4848;
+        margin-top: 3rem;
+    }
+
+    .tick-container i.green {
+        padding: 7rem;
+        background: #0ea70e;
+        margin-top: 3rem;
+        margin-left: -3rem;
+    }
+
+
 }
