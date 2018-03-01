@@ -176,7 +176,14 @@ page-attpage {
         margin-bottom: var(--margin-more);
     }
 
-    .att-card h4.subject {
+    .att-card h4.subject span.roll-no {
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .att-card h4.subject,
+    .att-card h4.enrollment-number {
         font-weight: 300;
         margin-bottom: 1rem;
     }
@@ -186,47 +193,8 @@ page-attpage {
         color: var(--main-bg);
     }
 
-    .att-card p.time {
-        margin: 0.5rem 0;
-        color: var(--color-darkgrey);
-        text-align: right;
-        margin-bottom: 1rem;
-    }
-
-    .att-card .pro-bar-container .pro-bar {
-        height: 3px;
-        border-radius: 0.1rem;
-        margin-bottom: 1rem;
-    }
-
-    .att-card:nth-child(even) .pro-bar-container .pro-bar {
-        background: rgba(0,0,255,0.2);
-    }
-
-    .att-card:nth-child(odd) .pro-bar-container .pro-bar {
-        background: rgba(255,0,0,0.2);
-    }
-
-    .att-card .pro-bar-container .pro-bar-deep {
-        height: 3px;
-        border-radius: 0.1rem;
-        width: 50%;
-    }
-
-    .att-card:nth-child(even) .pro-bar-container .pro-bar-deep {
-        background: rgba(0,0,255,0.95);
-        box-shadow: 0 0 9px rgba(0,0,255,0.7);
-    }
-
-    .att-card:nth-child(odd) .pro-bar-container .pro-bar-deep {
-        background: rgba(255,0,0,0.95);
-        box-shadow: 0 0 9px rgba(255,0,0,0.7);
-        width: 85%;
-    }
-
-
     .att-card .mark-status {
-        height: 10px;
+        height: 7px;
         margin: 1.5rem -1rem -2rem;
     }
 
@@ -236,6 +204,10 @@ page-attpage {
 
     .att-card:nth-child(odd) .mark-status {
         background: rgba(1,187,1,0.7);
+    }
+
+    .att-card:first-child .mark-status {
+        background: rgba(0,0,0,0.05);
     }
 
     .att-card p.percent-container {
