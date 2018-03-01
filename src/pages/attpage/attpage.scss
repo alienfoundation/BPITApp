@@ -224,14 +224,18 @@ page-attpage {
         width: 85%;
     }
 
-    .att-card:nth-child(even) {
-        // border: 1px dashed red;
-        box-shadow: 0 0px 20px -5px rgba(255, 0, 0, 1);
+
+    .att-card .mark-status {
+        height: 10px;
+        margin: 1.5rem -1rem -2rem;
     }
 
-    .att-card:nth-child(odd) {
-        // border: 1px dashed green;
-        box-shadow: 0 0px 20px -5px rgba(0, 255, 0, 1);
+    .att-card:nth-child(even) .mark-status {
+        background: rgba(232,7,7,0.6);
+    }
+
+    .att-card:nth-child(odd) .mark-status {
+        background: rgba(1,187,1,0.7);
     }
 
     .att-card p.percent-container {
