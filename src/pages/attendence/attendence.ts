@@ -30,23 +30,23 @@ export class AttendencePage {
     'COA': {
       'present' : 0,
       'absent' : 0,
-      'percentage' : 0,
-      'color' : 'transparent',
-      'shadowcolor' : 'none'
+      'percentage' : 93,
+      'color' : 'rgba(11,162,11,0.95)',
+      'shadowcolor' : '0 0 9px rgba(11,162,11,0.7)'
     },
     'CS': {
       'present' : 0,
       'absent' : 0,
-      'percentage' : 0,
-      'color' : 'transparent',
-      'shadowcolor' : 'none'
+      'percentage' : 74,
+      'color' : 'rgba(236,153,4,0.95)',
+      'shadowcolor' : '0 0 9px rgba(236,153,4,0.7)'
     },
     'DBMS': {
       'present' : 0,
       'absent' : 0,
-      'percentage' : 0,
-      'color' : 'transparent',
-      'shadowcolor' : 'none'
+      'percentage' : 65,
+      'color' : 'rgba(255,0,0,0.95)',
+      'shadowcolor' : '0 0 9px rgba(255,0,0,0.7)'
     }
   };
   public subjects = ['DBMS', 'CS', 'COA'];
