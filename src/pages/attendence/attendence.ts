@@ -31,21 +31,21 @@ export class AttendencePage {
       'present' : 0,
       'absent' : 0,
       'percentage' : 93,
-      'color' : 'rgba(11,162,11,0.95)',
+      'bgcolor' : 'rgba(11,162,11,0.95)',
       'shadowcolor' : '0 0 9px rgba(11,162,11,0.7)'
     },
     'CS': {
       'present' : 0,
       'absent' : 0,
       'percentage' : 74,
-      'color' : 'rgba(236,153,4,0.95)',
+      'bgcolor' : 'rgba(236,153,4,0.95)',
       'shadowcolor' : '0 0 9px rgba(236,153,4,0.7)'
     },
     'DBMS': {
       'present' : 0,
       'absent' : 0,
       'percentage' : 65,
-      'color' : 'rgba(255,0,0,0.95)',
+      'bgcolor' : 'rgba(255,0,0,0.95)',
       'shadowcolor' : '0 0 9px rgba(255,0,0,0.7)'
     }
   };
