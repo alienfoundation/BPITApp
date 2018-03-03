@@ -31,6 +31,7 @@ export class AttendencePage {
       'present' : 0,
       'absent' : 0,
       'percentage' : 93,
+      'bglightcolor' : 'rgba(11,162,11,0.2)',
       'bgcolor' : 'rgba(11,162,11,0.95)',
       'shadowcolor' : '0 0 9px rgba(11,162,11,0.7)'
     },
@@ -38,6 +39,7 @@ export class AttendencePage {
       'present' : 0,
       'absent' : 0,
       'percentage' : 74,
+      'bglightcolor' : 'rgba(236,153,4,0.2)',
       'bgcolor' : 'rgba(236,153,4,0.95)',
       'shadowcolor' : '0 0 9px rgba(236,153,4,0.7)'
     },
@@ -45,6 +47,7 @@ export class AttendencePage {
       'present' : 0,
       'absent' : 0,
       'percentage' : 65,
+      'bglightcolor' : 'rgba(255,0,0,0.2)',
       'bgcolor' : 'rgba(255,0,0,0.95)',
       'shadowcolor' : '0 0 9px rgba(255,0,0,0.7)'
     }
@@ -56,6 +59,7 @@ export class AttendencePage {
   public total;
   public bgcolor;
   public shadowcolor;
+  public bglightcolor;
 
   timetableData:any;
 
@@ -80,12 +84,15 @@ temp:any;
       this.percent = Math.round((this.present*100)/this.total);
       console.log('subject; ', sub, 'present: ',this.present,' absent: ',this.absent,' percentage: ',this.percent);
       if(this.percent >= 75) {
+        this.bglightcolor = 'rgba(11,162,11,0.2)';
         this.bgcolor = 'rgba(11,162,11,0.95)';
         this.shadowcolor = '0 0 9px rgba(11,162,11,0.7)';
       } else if (this.percent >=70 && this.percent<75) {
+        this.bglightcolor = 'rgba(236,153,4,0.2)';
         this.bgcolor = 'rgba(236,153,4,0.95)';
         this.shadowcolor = '0 0 9px rgba(236,153,4,0.7)';
       } else {
+        this.bglightcolor = 'rgba(255,0,0,0.2)';
         this.bgcolor = 'rgba(255,0,0,0.95)';
         this.shadowcolor = '0 0 9px rgba(255,0,0,0.7)';
       }
@@ -93,9 +100,9 @@ temp:any;
         'present' : this.present,
         'absent' : this.absent,
         'percentage' : this.percent,
+        'bglightcolor' : this.bglightcolor,
         'bgcolor' : this.bgcolor,
         'shadowcolor' : this.shadowcolor
-
       }
     });
     console.log('attandenc obj');

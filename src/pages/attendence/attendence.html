@@ -35,7 +35,7 @@
     <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Computer Organisation and Architecture</h4>
     <p class="time">Time :10:15</p>
     <div class="pro-bar-container">
-      <div class="pro-bar">
+      <div class="pro-bar" [ngStyle]="{'background' : attendance.COA.bglightcolor}">
         <div class="pro-bar-deep" [ngStyle]="{'width': attendance.COA.percentage+'%', 'background': attendance.COA.bgcolor, 'box-shadow': attendance.COA.shadowcolor}"></div>
         <div class="pro-bar-deep-head"></div>
       </div>
@@ -51,7 +51,7 @@
       <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Database Management System</h4>
       <p class="time">Time: 10:15</p>
       <div class="pro-bar-container">
-        <div class="pro-bar">
+        <div class="pro-bar" [ngStyle]="{'background' : attendance.DBMS.bglightcolor}">
           <div class="pro-bar-deep" [ngStyle]="{'width': attendance.DBMS.percentage+'%', 'background': attendance.DBMS.bgcolor, 'box-shadow': attendance.DBMS.shadowcolor}"></div>
           <div class="pro-bar-deep-head"></div>
         </div>
@@ -67,7 +67,7 @@
         <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Communication System</h4>
         <p class="time">Time: 13:00</p>
         <div class="pro-bar-container">
-          <div class="pro-bar">
+          <div class="pro-bar" [ngStyle]="{'background' : attendance.CS.bglightcolor}">
             <div class="pro-bar-deep" [ngStyle]="{'width': attendance.CS.percentage+'%', 'background': attendance.CS.bgcolor, 'box-shadow': attendance.CS.shadowcolor}"></div>
             <div class="pro-bar-deep-head"></div>
           </div>
