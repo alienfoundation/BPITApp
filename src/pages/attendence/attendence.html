@@ -22,18 +22,18 @@
         <i class="fa fa-flash"></i>
       </div>
       <div class="days">
-        <span class="active-day">Monday</span>
-        <span (click)="getTimetable()">Tuesday</span>
-        <span>Wednesday</span>
-        <span>Thursday</span>
-        <span>Friday</span>
+        <span class="active-day" (click)="getAttendanceData(); loadTimeTable('MONDAY');">Monday</span>
+        <span (click)="getAttendanceData(); loadTimeTable('TUESDAY');">Tuesday</span>
+        <span (click)="getAttendanceData(); loadTimeTable('WEDNESDAY');">Wednesday</span>
+        <span (click)="getAttendanceData(); loadTimeTable('THURSDAY');">Thursday</span>
+        <span (click)="getAttendanceData(); loadTimeTable('FRIDAY');">Friday</span>
       </div>
     </div>
   </div>
 
   <div class="att-card">
-    <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Computer Organisation and Architecture</h4>
-    <p class="time">Time :10:15</p>
+    <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> {{timetableToday._1.toLowerCase()}}</h4>
+    <p class="time">Time : 09:15</p>
     <div class="pro-bar-container">
       <div class="pro-bar" [ngStyle]="{'background' : attendance.COA.bglightcolor}">
         <div class="pro-bar-deep" [ngStyle]="{'width': attendance.COA.percentage+'%', 'background': attendance.COA.bgcolor, 'box-shadow': attendance.COA.shadowcolor}"></div>
@@ -48,7 +48,7 @@
   </div>
 
   <div class="att-card">
-      <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Database Management System</h4>
+      <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> {{timetableToday._2.toLowerCase()}}</h4>
       <p class="time">Time: 10:15</p>
       <div class="pro-bar-container">
         <div class="pro-bar" [ngStyle]="{'background' : attendance.DBMS.bglightcolor}">
@@ -64,19 +64,83 @@
     </div>
 
     <div class="att-card">
-        <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Communication System</h4>
-        <p class="time">Time: 13:00</p>
-        <div class="pro-bar-container">
-          <div class="pro-bar" [ngStyle]="{'background' : attendance.CS.bglightcolor}">
-            <div class="pro-bar-deep" [ngStyle]="{'width': attendance.CS.percentage+'%', 'background': attendance.CS.bgcolor, 'box-shadow': attendance.CS.shadowcolor}"></div>
-            <div class="pro-bar-deep-head"></div>
-          </div>
+      <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> {{timetableToday._3.toLowerCase()}}</h4>
+      <p class="time">Time: 11:15</p>
+      <div class="pro-bar-container">
+        <div class="pro-bar" [ngStyle]="{'background' : attendance.CS.bglightcolor}">
+          <div class="pro-bar-deep" [ngStyle]="{'width': attendance.CS.percentage+'%', 'background': attendance.CS.bgcolor, 'box-shadow': attendance.CS.shadowcolor}"></div>
+          <div class="pro-bar-deep-head"></div>
         </div>
-        <p class="percent-container">
-          <span class="present">Present: {{attendance.CS.present}}</span>
-          <span class="absent">Absent: {{attendance.CS.absent}}</span>
-          <span class="percent">Precentage: {{attendance.CS.percentage}}%</span>
-        </p>
       </div>
+      <p class="percent-container">
+        <span class="present">Present: {{attendance.CS.present}}</span>
+        <span class="absent">Absent: {{attendance.CS.absent}}</span>
+        <span class="percent">Precentage: {{attendance.CS.percentage}}%</span>
+      </p>
+    </div>
+
+    <div class="att-card">
+      <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> {{timetableToday._4.toLowerCase()}}</h4>
+      <p class="time">Time: 11:15</p>
+      <div class="pro-bar-container">
+        <div class="pro-bar" [ngStyle]="{'background' : attendance.CS.bglightcolor}">
+          <div class="pro-bar-deep" [ngStyle]="{'width': attendance.CS.percentage+'%', 'background': attendance.CS.bgcolor, 'box-shadow': attendance.CS.shadowcolor}"></div>
+          <div class="pro-bar-deep-head"></div>
+        </div>
+      </div>
+      <p class="percent-container">
+        <span class="present">Present: {{attendance.CS.present}}</span>
+        <span class="absent">Absent: {{attendance.CS.absent}}</span>
+        <span class="percent">Precentage: {{attendance.CS.percentage}}%</span>
+      </p>
+    </div>
+
+    <div class="att-card">
+      <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> {{timetableToday._5.toLowerCase()}}</h4>
+      <p class="time">Time: 11:15</p>
+      <div class="pro-bar-container">
+        <div class="pro-bar" [ngStyle]="{'background' : attendance.CS.bglightcolor}">
+          <div class="pro-bar-deep" [ngStyle]="{'width': attendance.CS.percentage+'%', 'background': attendance.CS.bgcolor, 'box-shadow': attendance.CS.shadowcolor}"></div>
+          <div class="pro-bar-deep-head"></div>
+        </div>
+      </div>
+      <p class="percent-container">
+        <span class="present">Present: {{attendance.CS.present}}</span>
+        <span class="absent">Absent: {{attendance.CS.absent}}</span>
+        <span class="percent">Precentage: {{attendance.CS.percentage}}%</span>
+      </p>
+    </div>
+
+    <div class="att-card">
+      <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> {{timetableToday._6.toLowerCase()}}</h4>
+      <p class="time">Time: 11:15</p>
+      <div class="pro-bar-container">
+        <div class="pro-bar" [ngStyle]="{'background' : attendance.CS.bglightcolor}">
+          <div class="pro-bar-deep" [ngStyle]="{'width': attendance.CS.percentage+'%', 'background': attendance.CS.bgcolor, 'box-shadow': attendance.CS.shadowcolor}"></div>
+          <div class="pro-bar-deep-head"></div>
+        </div>
+      </div>
+      <p class="percent-container">
+        <span class="present">Present: {{attendance.CS.present}}</span>
+        <span class="absent">Absent: {{attendance.CS.absent}}</span>
+        <span class="percent">Precentage: {{attendance.CS.percentage}}%</span>
+      </p>
+    </div>
+
+    <div class="att-card">
+      <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> {{timetableToday._7.toLowerCase()}}</h4>
+      <p class="time">Time: 11:15</p>
+      <div class="pro-bar-container">
+        <div class="pro-bar" [ngStyle]="{'background' : attendance.CS.bglightcolor}">
+          <div class="pro-bar-deep" [ngStyle]="{'width': attendance.CS.percentage+'%', 'background': attendance.CS.bgcolor, 'box-shadow': attendance.CS.shadowcolor}"></div>
+          <div class="pro-bar-deep-head"></div>
+        </div>
+      </div>
+      <p class="percent-container">
+        <span class="present">Present: {{attendance.CS.present}}</span>
+        <span class="absent">Absent: {{attendance.CS.absent}}</span>
+        <span class="percent">Precentage: {{attendance.CS.percentage}}%</span>
+      </p>
+    </div>
 </ion-content>
   

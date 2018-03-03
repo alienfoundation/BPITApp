@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TimetableService } from '../../app/services/timetable.service';
 import { HttpModule } from '@angular/http';
+import { StudentAttService } from '../../app/services/stuatt.service';
 
 /**
  * Generated class for the AttendencePage page.
@@ -18,7 +19,7 @@ export class AttendencePage {
 
   enrollment:number;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public timeTable: TimetableService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public timeTable: TimetableService, public stuAtt: StudentAttService) {
     console.log(navParams.data.enrollment);
     this.enrollment = navParams.data.enrollment;
   }
@@ -67,11 +68,30 @@ export class AttendencePage {
     console.log('ionViewDidLoad AttendencePage');
   }
 temp:any;
-  getTimetable() {
-    this.timeTable.getData(this.year, this.course).subscribe(data => {
+  getAttendanceData() {
+    this.stuAtt.getAtt(this.year, this.course).subscribe(data => {
       this.timetableData = data;
       console.log(this.timetableData);
       this.setAttendance();
+    });
+  }
+
+  timetable: any;
+  timetableToday = {
+    '_1' : '',
+    '_2' : '',
+    '_3' : '',
+    '_4' : '',
+    '_5' : '',
+    '_6' : '',
+    '_7' : ''
+  }
+
+  loadTimeTable(day) {
+    this.timeTable.getData(this.year, this.course).subscribe(data => {
+      this.timetable = data;
+      console.log(this.timetable);
+      this.timetableToday = this.timetable._2.CSE.A[day];
     });
   }
 

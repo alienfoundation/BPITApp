@@ -13,7 +13,7 @@ export class StudentAttService {
     }
 
     getAtt(year, branch) {
-        return this.http.get(this.baseUrl)
+        return this.http.get(this.baseUrl+"/"+year+"/"+branch)
             .map(res => res.json());
     }
 }

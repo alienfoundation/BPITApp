@@ -26,6 +26,7 @@ import { TimetableService } from '../app/services/timetable.service';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { StudentAttService } from './services/stuatt.service';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SplashScreen,
     PhotoViewer,
     TimetableService,
+    StudentAttService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
