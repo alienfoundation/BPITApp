@@ -23,7 +23,7 @@
       </div>
       <div class="days">
         <span class="active-day">Monday</span>
-        <span>Tuesday</span>
+        <span (click)="getTimetable()">Tuesday</span>
         <span>Wednesday</span>
         <span>Thursday</span>
         <span>Friday</span>
@@ -32,18 +32,18 @@
   </div>
 
   <div class="att-card">
-    <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Applied Mathematics IV</h4>
+    <h4 class="subject"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Computer Organisation and Architecture</h4>
     <p class="time">Time :10:15</p>
     <div class="pro-bar-container">
       <div class="pro-bar">
-        <div class="pro-bar-deep"></div>
+        <div class="pro-bar-deep" [ngStyle]="{'width': attendance.COA.percentage+'%', 'background': attendance.COA.bgcolor, 'box-shadow': attendance.COA.shadowcolor}"></div>
         <div class="pro-bar-deep-head"></div>
       </div>
     </div>
     <p class="percent-container">
-        <span class="present">Present: 5</span>
-        <span class="absent">Absent: 0</span>
-        <span class="percent">Precentage: 100%</span>
+        <span class="present">Present: {{attendance.COA.present}}</span>
+        <span class="absent">Absent: {{attendance.COA.absent}}</span>
+        <span class="percent">Precentage: {{attendance.COA.percentage}}%</span>
     </p>
   </div>
 
@@ -52,14 +52,14 @@
       <p class="time">Time: 10:15</p>
       <div class="pro-bar-container">
         <div class="pro-bar">
-          <div class="pro-bar-deep"></div>
+          <div class="pro-bar-deep" [ngStyle]="{'width': attendance.DBMS.percentage+'%', 'background': attendance.DBMS.bgcolor, 'box-shadow': attendance.DBMS.shadowcolor}"></div>
           <div class="pro-bar-deep-head"></div>
         </div>
       </div>
       <p class="percent-container">
-        <span class="present">Present: 5</span>
-        <span class="absent">Absent: 0</span>
-        <span class="percent">Precentage: 100%</span>
+        <span class="present">Present: {{attendance.DBMS.present}}</span>
+        <span class="absent">Absent: {{attendance.DBMS.absent}}</span>
+        <span class="percent">Precentage: {{attendance.DBMS.percentage}}%</span>
       </p>
     </div>
 
@@ -68,14 +68,14 @@
         <p class="time">Time: 13:00</p>
         <div class="pro-bar-container">
           <div class="pro-bar">
-            <div class="pro-bar-deep"></div>
+            <div class="pro-bar-deep" [ngStyle]="{'width': attendance.CS.percentage+'%', 'background': attendance.CS.bgcolor, 'box-shadow': attendance.CS.shadowcolor}"></div>
             <div class="pro-bar-deep-head"></div>
           </div>
         </div>
         <p class="percent-container">
-          <span class="present">Present: 31</span>
-          <span class="absent">Absent: 11</span>
-          <span class="percent">Precentage: 78%</span>
+          <span class="present">Present: {{attendance.CS.present}}</span>
+          <span class="absent">Absent: {{attendance.CS.absent}}</span>
+          <span class="percent">Precentage: {{attendance.CS.percentage}}%</span>
         </p>
       </div>
 </ion-content>

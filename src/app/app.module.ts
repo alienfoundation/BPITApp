@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
+import { HttpModule } from '@angular/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -19,6 +20,8 @@ import { AllclassPage } from '../pages/allclass/allclass';
 import { TdateattPage } from '../pages/tdateatt/tdateatt';
 import { EditattPage } from '../pages/editatt/editatt';
 
+
+import { TimetableService } from '../app/services/timetable.service'; 
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -44,6 +47,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -68,6 +72,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StatusBar,
     SplashScreen,
     PhotoViewer,
+    TimetableService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

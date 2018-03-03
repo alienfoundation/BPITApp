@@ -22,8 +22,10 @@ export class StudentloginPage {
     console.log('ionViewDidLoad StudentloginPage');
   }
 
-  attendencePage() {
-    this.navCtrl.setRoot(AttendencePage);
+  attendencePageRe() {
+    this.navCtrl.setRoot(AttendencePage, {
+      enrollment : '04920802716'
+    });
   }
 
 }
